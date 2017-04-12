@@ -1,0 +1,32 @@
+<div class="col-lg-6">
+<div class="panel panel-info">
+  <div class="panel-heading">Profile Details</div>
+  <div class="panel-body">
+
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @profile.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @profile.lastname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @profile.address %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @profile.user_id  %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile), class: "btn btn-success" %> 
+<%= link_to 'Back', profiles_path, class: "btn btn-warning" %>
+</div>
+</div>
+
+</div>
